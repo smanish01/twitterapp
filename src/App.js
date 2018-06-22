@@ -11,7 +11,6 @@ class App extends Component {
         <Switch>
           <Route exact path='/' render={(props) => <Login {...props} />} />
           <Route exact path='/twitter' render={(props) => <Twitter {...props} />} />
-
         </Switch>
       </Router >
     );
