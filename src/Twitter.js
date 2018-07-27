@@ -9,9 +9,9 @@ class Twitter extends React.Component {
         axios.get('http://localhost:3001/userdata')
     }
 
+    //test
     // submitTweet() {
     //     var tweet = document.getElementById('myTextArea').value;
-
     //     let data = {
     //         tweet : tweet
     //     }
