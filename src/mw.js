@@ -6,16 +6,14 @@ var passport = require('passport')
     , TwitterStrategy = require('passport-twitter').Strategy;
 
 passport.use(new TwitterStrategy({
-    consumerKey: 'zdSLhvzisSPptRVUuWJRsd3il',
-    consumerSecret: 'lot3lRN3Re8PzucVM51mKbliBEY0Y2Rz8IFO909kUHLtQsfomw',
     callbackURL: "http://localhost:3001/auth/twitter/callback"
 },
     function (token, tokenSecret, profile, done) {
 
         if (profile) {
             user = profile     
-            user.consumerKey = 'zdSLhvzisSPptRVUuWJRsd3il',
-                user.consumerSecret = 'lot3lRN3Re8PzucVM51mKbliBEY0Y2Rz8IFO909kUHLtQsfomw'
+            user.consumerKey = '',
+                user.consumerSecret = ''
             user.token = token
             user.tokenSecret = tokenSecret
             return done(null, user, token, tokenSecret);
